@@ -40,7 +40,7 @@ export async function personalizedDeductionSuggestions(
 
 const prompt = ai.definePrompt({
   name: 'personalizedDeductionSuggestionsPrompt',
-  model: 'googleai/gemini-2.0-flash',
+  model: 'googleai/gemini-1.5-flash-latest', // Changed model
   input: {schema: PersonalizedDeductionSuggestionsInputSchema},
   output: {schema: PersonalizedDeductionSuggestionsOutputSchema},
   prompt: `You are a tax advisor. Analyze the following tax form data and user information to suggest potential deductions and credits.

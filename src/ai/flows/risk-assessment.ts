@@ -36,6 +36,7 @@ export async function assessTaxFormRisk(input: AssessTaxFormRiskInput): Promise<
 
 const assessTaxFormRiskPrompt = ai.definePrompt({
   name: 'assessTaxFormRiskPrompt',
+  model: 'googleai/gemini-2.0-flash',
   input: {schema: AssessTaxFormRiskInputSchema},
   output: {schema: AssessTaxFormRiskOutputSchema},
   prompt: `You are a tax expert reviewing extracted data from a user's tax form to identify potential risks, inconsistencies, and red flags.

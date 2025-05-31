@@ -31,6 +31,7 @@ export async function taxFormSimplification(input: TaxFormSimplificationInput): 
 
 const prompt = ai.definePrompt({
   name: 'taxFormSimplificationPrompt',
+  model: 'googleai/gemini-2.0-flash',
   input: {schema: TaxFormSimplificationInputSchema},
   output: {schema: TaxFormSimplificationOutputSchema},
   prompt: `You are an AI tax assistant that simplifies complex tax forms into plain language.

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'TaxWise AI',
+  title: 'TaxWise Ai',
   description: 'Understand complex tax forms with AI assistance.',
 };
 
